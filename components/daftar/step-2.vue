@@ -245,7 +245,7 @@ export default {
         { id: 0, name: 'male', alias: 'Laki-Laki' },
         { id: 1, name: 'female', alias: 'Perempuan' }
       ],
-      baseURL: 'http://localhost:9000/api'
+      baseURL: 'http://35.247.145.161:3200/api'
     }
   },
   computed: {
