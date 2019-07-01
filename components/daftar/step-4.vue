@@ -27,6 +27,8 @@
           v-validate="'required'"
           :data-vv-name="'level' + index"
           label="Tingkat"
+          item-value="id"
+          item-text="name"          
         ></v-select>
         <v-select
           :items="rankItems"
@@ -35,6 +37,8 @@
           :error-messages="errors.collect('rank' + index)"
           v-validate="'required'"
           :data-vv-name="'rank' + index"
+          item-value="id"
+          item-text="name"               
           label="Peringkat"
         ></v-select>
         <v-select
@@ -62,25 +66,56 @@ export default {
         achievements: []
       },
       rankItems: [
-        'Juara 1',
-        'Juara 2',
-        'Juara 3',
-        'Peserta',
+        {
+          id: 1,
+          name: 'Juara 1'
+        },
+        {
+          id: 2,
+          name: 'Juara 2'
+        },
+        {
+          id: 3,
+          name: 'Juara 3'
+        },
+        {
+          id: 4,
+          name: 'Peserta'
+        }
       ],
       levelItems: [
-        'Internasional',
-        'Nasional',
-        'Daerah',
-        'Universitas',
-        'Sekolah'
+        {
+          id: 1,
+          name: 'Internasional'
+        },
+        {
+          id: 2,
+          name: 'Nasional'
+        },
+        {
+          id: 3,
+          name: 'Daerah'
+        },
+        {
+          id: 4,
+          name: 'Universitas'
+        },
+        {
+          id: 5,
+          name: 'Sekolah'
+        }
       ],
       yearItems: [
+        2019,
         2018,
         2017,
         2016,
         2015,
         2014,
-        2013
+        2013,
+        2012,
+        2011,
+        2010
       ]
     }
   },

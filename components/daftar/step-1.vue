@@ -18,7 +18,7 @@
                     <v-radio
                       :label="room.name"
                       :color="room.color"
-                      :value="room.name"
+                      :value="room.id"
                       :key="index"
                     ></v-radio>
               </v-radio-group>
@@ -56,6 +56,7 @@ export default {
       },
       rooms: [
         {
+          id: 0,
           image: '/images/rooms/education.png',
           name: 'Education',
           color: 'secondary',
@@ -64,20 +65,23 @@ export default {
           Namun, dengan berbagai kemudahan akses terhadap pendidikan dan berbagai layanan yang gratis angka putus sekolah di Indonesia mengutip data dari UNICEF tahun 2016 sebanyak 2,5 juta anak Indonesia tidak dapat menikmati pendidikan lanjutan yakni sebanyak 600 ribu anak usia sekolah dasar (SD) dan 1,9 juta anak usia Sekolah Menengah Pertama (SMP). Oleh karena itu, bangsa Indonesia membutuhkan peran serta dari generasi muda untuk turut serta menciptakan perubahan disruptif di dunia pendidikan agar pendidikan yang gratis dapat dinikmati seluruh lapisan masyarakat di Indonesia.`
         },
         {
+          id: 1,
           image: '/images/rooms/entrepreneur.png',
-          name: 'Entrepreneurship',
+          name: 'Technopreneurship',
           color: 'warning',
           description: 'Seen the Unseen, Escalate the Oppotunity!',
           longDesc: `Idealnya, ekosistem ekonomi kreatif harus tumbuh karena lingkungan yang sehat baik institusinya, pembinaan dan pertumbuhannya. Selama ini ekonomi kreatif yang dibicarakan hanya berfokus pada bentuk - bentuk yang sedang populer dikalangan menegah keatas, sementara ekonomi kreatif yang berada pada level grass root tidak tersentuh. Grassroot sendiri merupakan masyarakat akar rumput atau suatu konsep inovasi yang bepihak kepada kaum kecil atau menengah kebawah, seperti pengrajin kain konvensional, pemahat patung, mebel dan furniture. Diperlukan pengembangan dalam meningkatkan kapasitas usaha, inovasi produk serta meningkatkan keahlian.`
         },
         {
+          id: 2,
           image: '/images/rooms/poverty.png',
-          name: 'Poverty',
+          name: 'Environment',
           color: 'error',
           description: 'Harnessing Agricultural Potential To Eradicate Poverty.',
           longDesc: `Berita Resmi Statistik tentang Profil Kemiskinan di Indonesia Maret 2016 diterbitkan Badan Pusat Statistik (BPS) pada tanggal 18 Juli 2016 kemarin. Menurut BPS, jumlah penduduk miskin—penduduk dengan pengeluaran per kapita per bulan di bawah garis kemiskinan—pada Maret 2016 di Indonesia mencapai 28,01 juta jiwa atau sebesar 10,86 persen dari total jumlah penduduk Indonesia. Berdasarkan profil kemiskinan BPS, walaupun dari sisi jumlah kemiskinan di perdesaan menurun, namun secara persentase penduduk miskin meningkat. Pada bulan Maret 2015 persentase penduduk miskin perdesaan sebesar 14,21 persen, lalu turun pada September 2015 menjadi 14,09 persen kemudian naik 0,02 persen di bulan Maret 2016 menjadi 14,11 persen. Profil kemiskinan di Indonesia yang mengalami penurunan dalam angka namun secara absolut angka kemiskinan di Indonesia masih besar sejumlah 26,58 juta pada tahun 2017.`
         },
         {
+          id: 3,
           image: '/images/rooms/urban-planning.png',
           name: 'Urban Planning',
           color: 'info',
@@ -85,8 +89,9 @@ export default {
           longDesc: `Harga tanah yang makin tinggi dan naik begitu cepat membuat industri properti di tanah air cukup tertekan, terutama untuk penyediaan rumah murah bagi masyarakat. Dengan harga tanah yang semakin mahal tapi tak sebanding dengan kenaikan pendapatan, maka diprediksi akan makin banyak masyarakat yang tidak punya rumah, khususnya generasi milenial yang akan mendominasi demografi penduduk Indonesia di masa mendatang. Sebab itu, dibutuhkan sebuah solusi disruptif agar generasi milenial bisa tetap memiliki hunian di masa depan saat lahan semakin terbatas dan harga tanah menjadi semakin mahal. `
         },
         {
+          id: 4,
           image: '/images/rooms/human-capital.png',
-          name: 'Human Capital',
+          name: 'International Relation',
           color: 'primary',
           description: 'Learning Ability In The Future Human Age.',
           longDesc: `Saat ini peran manusia mulai digantikan oleh teknologi baik itu secara teknis operasional dengan mesin-mesin canggih ataupun secara intelektual dengan artificial inteligence. Tentu hal ini menghadirkan kegelisahan tersendiri bagi mereka yang mulai tergantikan perannya. Beberapa pekerjaan lama mungkin akan bisa tergantikan sepenuhnya oleh kecanggihan teknologi, namun akan ada berbagai macam jenis pekerjaan baru yang belum pernah terpikirkan sebelumnya di masa depan akan bermunculan seperi desainer 3d printing, Insinyur Drones, sejarawan internet, jasa penghijauan lingkungan, bahkan hingga terapis untuk pecandu media sosial.
@@ -94,6 +99,7 @@ export default {
           Oleh karena itu, generasi milennials harus mempersiapkan diri untuk menghadapi berbagai jenis pekerjaan dan peluang baru di masa depan agar tidak tergantikan oleh canggihnya teknologi.`
         },
         {
+          id: 5,
           image: '/images/rooms/digital.png',
           name: 'Digital',
           color: 'success',
