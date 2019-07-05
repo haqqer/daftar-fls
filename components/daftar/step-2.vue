@@ -245,7 +245,7 @@ export default {
         { id: 0, name: 'male', alias: 'Laki-Laki' },
         { id: 1, name: 'female', alias: 'Perempuan' }
       ],
-      baseURL: 'https://api.futureleadersummit.org/api'
+      baseURL: 'https://api.futureleadersummit.org/data'
     }
   },
   computed: {

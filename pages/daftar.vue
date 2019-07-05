@@ -79,7 +79,7 @@ export default {
       loadingSubmit: false,
       loadingStep: false,
       hasError: false,
-      daftarUrl: 'http://localhost:3000'
+      daftarUrl: 'https://api.futureleadersummit.org'
     }
   },
   computed: {
