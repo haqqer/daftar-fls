@@ -27,7 +27,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="primary" class="d-flex" dense flat dark app>
+    <v-toolbar color="primary" class="d-flex" dense dark flat app>
       <nuxt-link to="/">
         <v-toolbar-title>
           <v-avatar tile>
@@ -56,7 +56,7 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-content>
+    <v-content style="background-color:#FFB74D">
       <v-container>
         <nuxt />
       </v-container>
