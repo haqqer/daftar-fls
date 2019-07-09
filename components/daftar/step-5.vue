@@ -32,7 +32,7 @@
         ></v-select>
         <v-select
           :items="positionItems"
-          v-model="socialActivity.level"
+          v-model="socialActivity.position"
           data-vv-as="Jabatan"
           :error-messages="errors.collect('position' + index)"
           v-validate="'required'"
