@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="subheading primary__dark--text">Apa motivasi kamu mengikuti FLS 2018?</div>
+    <div class="subheading primary__dark--text">Apa motivasi kamu mengikuti FLS 2019?</div>
     <v-text-field
       v-model="model.essayMotivationJoin"
       data-vv-as="Jawaban Motivasi"
@@ -73,7 +73,7 @@ export default {
           `
         case 'Digital':
           return `
-            <p>Di Indonesia, diskusi tentang blockchain sedang menghangat menyusul kehebohan soal mata uang digital salah satunya adalah bitcoin. Bank Indonesia (BI) telah melarang transaksi pembayaran menggunakan bitcoin pada tahun 2018. Larangan bitcoin ini akan diatur dalam Peraturan Bank Indonesia (PBI) yang rencananya akan dikeluarkan dalam waktu dekat. Namun saat ini memang belum ada peraturan spesifik oleh Bank Indonesia terkait dengan transaksi menggunakan bitcoin</p>
+            <p>Di Indonesia, diskusi tentang blockchain sedang menghangat menyusul kehebohan soal mata uang digital salah satunya adalah bitcoin. Bank Indonesia (BI) telah melarang transaksi pembayaran menggunakan bitcoin pada tahun 2019. Larangan bitcoin ini akan diatur dalam Peraturan Bank Indonesia (PBI) yang rencananya akan dikeluarkan dalam waktu dekat. Namun saat ini memang belum ada peraturan spesifik oleh Bank Indonesia terkait dengan transaksi menggunakan bitcoin</p>
 
             <p>Untuk itu, Bank Indonesia masih melakukan pengkajian secara mendalam terkait bitcoin, apakah akan diatur dalam Peraturan Bank Indonesia (PBI) uang elektronik atau terpisah misalnya nanti masuk dalam PBI cryptocurrency.</p>
 

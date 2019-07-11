@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="display-1">Pendaftaran Delegates FLS 2018</div>
+      <div class="display-1">Pendaftaran Delegates FLS 2019</div>
       <br class="my-2">
       <v-card>
         <v-chip style="margin-top: -16px;" class="ml-4" label color="primary" text-color="white">
@@ -14,13 +14,13 @@
             <v-icon small>fiber_manual_record</v-icon> Pemuda/pemudi berusia 18-25 tahun
           </p>
           <p>
-            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2018
+            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019  
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon> Bersedia membayar commitment fee, jika terpilih menjadi delegates
           </p>
           <p>
-            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2018
+            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2019
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon> Mengikuti peraturan kebijakan dan alur pendaftaran
@@ -37,7 +37,7 @@
         <v-card-text>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Follow fanspage dan instagram Future Leader Summit 2018 : Future Leader Summit
+            Follow fanspage dan instagram Future Leader Summit 2019 : Future Leader Summit
             <br>
             <a class="ml-4 info--text" href="https://www.facebook.com/FutureLeaderSummit/" style="text-decoration: none;">
               <v-icon color="info">fa fa-facebook-square</v-icon>
@@ -67,10 +67,10 @@
           </p>
           <blockquote class="blockquote mt-0">
             &#8220;
-            <br> Saya sudah berani mengambil kesempatan untuk menjadi agen perubahan dunia dengan mendaftar Future Leader Summit 2018. Kalau kamu kapan? Tantang dirimu sekarang juga!
+            <br> Saya sudah berani mengambil kesempatan untuk menjadi agen perubahan dunia dengan mendaftar Future Leader Summit 2019. Kalau kamu kapan? Tantang dirimu sekarang juga!
             <footer>
               <small>
-                #FutureLeaderSummit2018
+                #FutureLeaderSummit2019
                 <br> #GrabTheChance
                 <br> #TakeThe Charge
               </small>
@@ -79,11 +79,11 @@
           </blockquote>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Pengumuman penerimaan delegates akan diumumkan melalui email dan website resmi Future Leader Summit 2018
+            Pengumuman penerimaan delegates akan diumumkan melalui email dan website resmi Future Leader Summit 2019
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Setelah pengumuman penerimaan delegates via email dan website Future Leader Summit 2018, delegates terpilih wajib melakukan konfrimasi dan pembayaran maksimal 3x24 jam via email PID masing-masing room.
+            Setelah pengumuman penerimaan delegates via email dan website Future Leader Summit 2019, delegates terpilih wajib melakukan konfrimasi dan pembayaran maksimal 3x24 jam via email PID masing-masing room.
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon>

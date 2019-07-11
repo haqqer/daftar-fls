@@ -164,7 +164,7 @@ export default {
             window.location.href = 'http://futureleadersummit.org/pesan?' +
                                     'fullName=' + this.formModel.fullName +
                                     '&nickName=' + this.formModel.nickName +
-                                    '&topic=' + 'pendaftaran 2018' +
+                                    '&topic=' + 'pendaftaran 2019' +
                                     '&email=' + this.formModel.email +
                                     '&customTitle=' + 'Mohon berikan tanggapan, kritik atau saran mengenai pendaftaran ini'
           }
