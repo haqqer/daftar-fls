@@ -1,7 +1,7 @@
 <template>
   <v-card-title>
     <div>
-      <h3 class="headline mb-0">Daftar FLS 2018</h3>
+      <h3 class="headline mb-0">Daftar FLS 2019</h3>
       <div>{{ step }}/7</div>
     </div>
   </v-card-title>
