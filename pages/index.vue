@@ -1,7 +1,9 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="display-1">Pendaftaran Delegates FLS 2018</div>
+      
+
+      <div class="display-1">Pendaftaran Delegates FLS 2019</div>
       <br class="my-2">
       <v-card>
         <v-chip style="margin-top: -16px;" class="ml-4" label color="primary" text-color="white">
@@ -14,13 +16,13 @@
             <v-icon small>fiber_manual_record</v-icon> Pemuda/pemudi berusia 18-25 tahun
           </p>
           <p>
-            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2018
+            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon> Bersedia membayar commitment fee, jika terpilih menjadi delegates
           </p>
           <p>
-            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2018
+            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2019
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon> Mengikuti peraturan kebijakan dan alur pendaftaran
@@ -67,23 +69,23 @@
           </p>
           <blockquote class="blockquote mt-0">
             &#8220;
-            <br> Saya sudah berani mengambil kesempatan untuk menjadi agen perubahan dunia dengan mendaftar Future Leader Summit 2018. Kalau kamu kapan? Tantang dirimu sekarang juga!
+            <br> I have dared myself to take the opportunity to become a world change agent by registering myself as delegate of Future Leader Summit 2019. How about you? challenge yourself now!
             <footer>
               <small>
-                #FutureLeaderSummit2018
-                <br> #GrabTheChance
-                <br> #TakeThe Charge
+                #FutureLeaderSummit2019
+                <br> #ThinkTheUnthikable
+                <br> #FLS2019
               </small>
             </footer>
             &#8221;
           </blockquote>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Pengumuman penerimaan delegates akan diumumkan melalui email dan website resmi Future Leader Summit 2018
+            Pengumuman penerimaan delegates akan diumumkan melalui email dan website resmi Future Leader Summit 2019
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Setelah pengumuman penerimaan delegates via email dan website Future Leader Summit 2018, delegates terpilih wajib melakukan konfrimasi dan pembayaran maksimal 3x24 jam via email PID masing-masing room.
+            Setelah pengumuman penerimaan delegates via email dan website Future Leader Summit 2019, delegates terpilih wajib melakukan konfrimasi dan pembayaran maksimal 3x24 jam via email PID masing-masing room.
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
@@ -94,7 +96,7 @@
       <br class="mb-1">
       <v-card>
         <v-card-text>
-          <h3 class="text-xs-center">Grab the Chance, Take the Charge!</h3>
+          <h3 class="text-xs-center">Think The Unthinkable</h3>
         </v-card-text>
         <v-card-actions>
           <v-layout justify-center>
@@ -117,3 +119,10 @@ export default {
   }
 }
 </script>
+<style scoped>
+          .container{
+            height: 40%;
+            width: 40px;
+            background-image: url('/images/background.svg')
+          }
+</style>
