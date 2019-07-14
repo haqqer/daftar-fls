@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-image: url('/images/background.svg')">
     <v-navigation-drawer
       temporary
       v-model="drawer"

@@ -11,10 +11,23 @@
         </v-chip>
         <v-card-text>
           <p>
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Bersedia membayar commitment fee, jika terpilih menjadi delegates
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2019
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Mengikuti peraturan kebijakan dan alur pendaftaran
+          </p>
             <v-icon small>fiber_manual_record</v-icon> Pemuda/pemudi berusia 18-25 tahun
           </p>
           <p>
-            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019  
+            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon> Bersedia membayar commitment fee, jika terpilih menjadi delegates
@@ -67,12 +80,12 @@
           </p>
           <blockquote class="blockquote mt-0">
             &#8220;
-            <br> Saya sudah berani mengambil kesempatan untuk menjadi agen perubahan dunia dengan mendaftar Future Leader Summit 2019. Kalau kamu kapan? Tantang dirimu sekarang juga!
+            <br> I have dared myself to take the opportunity to become a world change agent by registering myself as delegate of Future Leader Summit 2019. How about you? challenge yourself now!
             <footer>
               <small>
                 #FutureLeaderSummit2019
-                <br> #GrabTheChance
-                <br> #TakeThe Charge
+                <br> #ThinkTheUnthikable
+                <br> #FLS2019
               </small>
             </footer>
             &#8221;
@@ -94,7 +107,7 @@
       <br class="mb-1">
       <v-card>
         <v-card-text>
-          <h3 class="text-xs-center">Grab the Chance, Take the Charge!</h3>
+          <h3 class="text-xs-center">Think The Unthinkable</h3>
         </v-card-text>
         <v-card-actions>
           <v-layout justify-center>
@@ -117,6 +130,10 @@ export default {
   }
 }
 </script>
-<style>
-  
+<style scoped>
+          .container{
+            height: 40%;
+            width: 40px;
+            background-image: url('/images/background.svg')
+          }
 </style>
