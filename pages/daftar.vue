@@ -78,7 +78,8 @@ export default {
       stepMax: 6,
       loadingSubmit: false,
       loadingStep: false,
-      hasError: false
+      hasError: false,
+      daftarUrl: 'https://api.futureleadersummit.org'
     }
   },
   computed: {
@@ -121,28 +122,34 @@ export default {
       this.loadingSubmit = true
       let self = this
 
-      this.$axios.post('http://128.199.72.101:3000/api/registrars', {
-        roomFirst: this.formModel.room1,
-        roomSecond: this.formModel.room1,
-        fullname: this.formModel.fullName,
-        nickname: this.formModel.nickName,
+      this.$axios.post(this.daftarUrl+'/delegates', {
+        fullName: this.formModel.fullName,
+        nickName: this.formModel.nickName,
         placeOfBirth: this.formModel.placeOfBirth,
         dateOfBirth: this.formModel.dateOfBirth,
         gender: this.formModel.gender,
         domicileAddress: this.formModel.domicileAddress,
-        province: this.formModel.province.name,
-        achievements: this.formModel.achievements,
+        province: this.formModel.province,
         city: this.formModel.regency,
         institution: this.formModel.institution,
         phone: this.formModel.phone,
         email: this.formModel.email,
-        socmed: this.formModel.socmed,
-        organizations: this.formModel.organizations,
-        socialActivities: this.formModel.socialActivities,
-        essayMotivationJoin: this.formModel.essayMotivationJoin,
-        essayRoomSelected: this.formModel.essayRoomSelected,
-        essayCaseStudy: this.formModel.essayCaseStudy
-      }).then(response => {
+        Room: {
+          firstRoom: this.formModel.room1,
+          secondRoom: this.formModel.room1,
+        },        
+        Socmed: this.formModel.socmed,
+        Essay: {
+          essayMotivationJoin: this.formModel.essayMotivationJoin,
+          essayRoomSelected: this.formModel.essayRoomSelected,
+          essayCaseStudy: this.formModel.essayCaseStudy
+        },
+        Organizations: this.formModel.organizations,
+        SocialActivities: this.formModel.socialActivities,
+        Achievements: this.formModel.achievements,        
+      }).then(result => {
+        const response = result.data
+        console.log('formModel : '+this.formModel)
         console.log('submit ', response.data);
         this.setHistory(response.data)
         this.loadingSubmit = false
@@ -157,7 +164,7 @@ export default {
             window.location.href = 'http://futureleadersummit.org/pesan?' +
                                     'fullName=' + this.formModel.fullName +
                                     '&nickName=' + this.formModel.nickName +
-                                    '&topic=' + 'pendaftaran 2018' +
+                                    '&topic=' + 'pendaftaran 2019' +
                                     '&email=' + this.formModel.email +
                                     '&customTitle=' + 'Mohon berikan tanggapan, kritik atau saran mengenai pendaftaran ini'
           }
@@ -178,7 +185,7 @@ export default {
           // The request was made and the server responded with a status code
           // that falls out of the range of 2xx
           console.log('--- error respon ----')
-          console.log(error.response.data);
+          console.log(error.response.data.message);
           console.log(error.response.status);
           console.log(error.response.headers);
         } else if (error.request) {

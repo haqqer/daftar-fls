@@ -27,10 +27,23 @@
           v-validate="'required'"
           :data-vv-name="'level' + index"
           label="Tingkat"
+          item-value="id"
+          item-text="name"          
         ></v-select>
         <v-select
+          :items="positionItems"
+          v-model="socialActivity.position"
+          data-vv-as="Jabatan"
+          :error-messages="errors.collect('position' + index)"
+          v-validate="'required'"
+          :data-vv-name="'position' + index"
+          label="Jabatan"
+          item-value="name"
+          item-text="name"            
+        ></v-select>        
+        <v-select
           :items="yearItems"
-          v-model="socialActivity.year"
+          v-model="socialActivity.period"
           label="Tahun"
           data-vv-as="Tahun"
           :error-messages="errors.collect('year' + index)"
@@ -53,19 +66,75 @@ export default {
         socialActivities: []
       },
       levelItems: [
-        'Internasional',
-        'Nasional',
-        'Daerah',
-        'Universitas',
-        'Sekolah'
-      ],
+        {
+          id: 1,
+          name: 'Internasional'
+        },
+        {
+          id: 2,
+          name: 'Nasional'
+        },
+        {
+          id: 3,
+          name: 'Daerah'
+        },
+        {
+          id: 4,
+          name: 'Universitas'
+        },
+        {
+          id: 5,
+          name: 'Sekolah'
+        }
+      ],    
+      positionItems: [
+        {
+          id: 1,
+          name: 'Ketua'
+        },
+        { id: 2,
+          name: 'Wakil Ketua'
+        },
+        {
+          id: 3,
+          name: 'Sekretaris'
+        },
+        { id: 4,
+          name: 'Bendahara'
+        },
+        { id: 5,
+          name: 'Menteri'
+        },
+        { id: 6,
+          name: 'Kabid'
+        },
+        { id: 7,
+          name: 'Wakil Menteri'
+        },
+        { id: 8,
+          name: 'Wakil Bidang'
+        },
+        { id: 9,
+          name: 'Kadiv'
+        },
+        { id: 10,
+          name: 'Staff Ahli'
+        },
+        { id: 11,
+          name: 'Anggota/Staff'
+        }
+      ],      
       yearItems: [
+        2019,
         2018,
         2017,
         2016,
         2015,
         2014,
-        2013
+        2013,
+        2012,
+        2011,
+        2010
       ]
     }
   },

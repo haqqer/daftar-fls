@@ -75,7 +75,7 @@
       v-validate="'required'"
       data-vv-name="gender"
       label="Jenis Kelamin"
-      item-value="name"
+      item-value="id"
       item-text="alias"
     ></v-select>
 
@@ -84,10 +84,8 @@
       :items="provinceItems"
       :search-input.sync="searchProvince"
       autocomplete
-      :no-data-text="loadingProvince ? 'Loading...' : searchProvince"
-      item-value="name"
+      item-value="id"
       item-text="name"
-      return-object
       :loading="loadingProvince"
       v-model="model.province"
       data-vv-as="Provinsi"
@@ -95,12 +93,15 @@
       v-validate="'required'"
       data-vv-name="province"
       label="Provinsi"
-    ></v-select>
+      @keyup="provinceItems.push({ id: 'search', name: 'loading' })"
+    >
+      <div slot="no-data" @click="applyOtherProvince()">{{ loadingProvince ? 'Loading...' : searchProvince }}</div>    
+    </v-select>
     <v-select
       :items="regencyItems"
       :search-input.sync="searchRegency"
       autocomplete
-      item-value="name"
+      item-value="id"
       item-text="name"
       :loading="loadingRegency"
       v-model="model.regency"
@@ -127,6 +128,7 @@
       :items="institutionItems"
       :search-input.sync="searchInstitutions"
       autocomplete
+      :no-data-text="loadingUniversity ? 'Loading...' : searchInstitutions"
       v-model="model.institution"
       data-vv-as="Sekolah/Universitas"
       :error-messages="errors.collect('institution')"
@@ -134,8 +136,8 @@
       data-vv-name="institution"
       label="Sekolah/Universitas"
       :loading="loadingUniversity"
-      item-value="name"
-      item-text="name"
+      item-value="nama"
+      item-text="nama"
       @keyup="institutionItems.push({ id: 'search', name: 'loading' })"
     >
       <div slot="no-data" @click="applyOtherInstitution()">{{ loadingUniversity ? 'Loading...' : searchInstitutions }}</div>
@@ -156,10 +158,9 @@
       label="Email"
       data-vv-as="Email"
       :error-messages="errorEmail"
-      v-validate="'required|email|unique'"
+      v-validate="'required|email'"
       data-vv-name="email"
       data-vv-delay="700"
-      :loading="loadingCheckEmail"
     ></v-text-field>
     <v-text-field
       v-model="model.socmed.instagram"
@@ -170,6 +171,22 @@
       data-vv-name="instagram"
       prefix="@"
     ></v-text-field>
+    <v-text-field
+      v-model="model.socmed.facebook"
+      label="Akun Facebook"
+      data-vv-as="Akun Facebook"
+      :error-messages="errors.collect('facebook')"
+      v-validate="'required'"
+      data-vv-name="facebook"
+    ></v-text-field>
+    <v-text-field
+      v-model="model.socmed.twitter"
+      label="Akun Twitter"
+      data-vv-as="Akun Twitter"
+      :error-messages="errors.collect('twitter')"
+      v-validate="'required'"
+      data-vv-name="twitter"
+    ></v-text-field>        
     <v-text-field
       v-model="model.socmed.line"
       label="Akun Line"
@@ -203,8 +220,11 @@ export default {
         phone: '',
         email: '',
         socmed: {
+          instagram: '',
+          facebook: '',
           line: '',
-          instagram: ''
+          twitter: '',
+          telegram: ''
         },
       },
       loadingCheckEmail: false,
@@ -222,9 +242,10 @@ export default {
       institutionItems: [],
       menuDateOfBirth: false,
       genderItems: [
-        { name: 'male', alias: 'Laki-Laki' },
-        { name: 'female', alias: 'Perempuan' }
-      ]
+        { id: 0, name: 'male', alias: 'Laki-Laki' },
+        { id: 1, name: 'female', alias: 'Perempuan' }
+      ],
+      baseURL: 'https://api.futureleadersummit.org/data'
     }
   },
   computed: {
@@ -236,9 +257,9 @@ export default {
     menuDateOfBirth (val) {
       val && this.$nextTick(() => (this.$refs.picker.activePicker = 'YEAR'))
     },
-    'model.province' (val) {
-      if (val) this.fetchDataRegencies()
-    },
+    // 'model.province' (val) {
+    //   if (val) this.fetchDataRegencies()
+    // },
     searchPlaceOfBirth: _debounce(function (e) {
       e && this.fetchDataPlaceOfBirth()
     }, 500),
@@ -266,17 +287,13 @@ export default {
     },
     fetchDataPlaceOfBirth () {
       this.loadingPlaceOfBirth = true
-      this.$axios.get('http://128.199.72.101:3000/api/dataregencies', {
+      this.$axios.get(this.baseURL+'/regencies', {
         params: {
-          filter: {
-            limit: 20,
-            where: {
-              // options untuk supaya case insensitive -> regex
-              name: { like: this.searchPlaceOfBirth + '.*', options: 'i' }
-            }
-          }
+          limit: 20,
+          name: this.searchPlaceOfBirth
         }
-      }).then(response => {
+      }).then(result => {
+        const response = result.data
         console.log('tmpt lahir ', response.data);
         this.placeOfBirthItems = response.data
         if (this.placeOfBirthItems.length < 1 && this.searchPlaceOfBirth) {
@@ -290,19 +307,15 @@ export default {
     },
     fetchDataUniversities () {
       this.loadingUniversity = true
-      this.$axios.get('http://128.199.72.101:3000/api/datauniversities', {
+      this.$axios.get(this.baseURL+'/universities', {
         params: {
-          filter: {
-            limit: 20,
-            where: {
-              // options untuk supaya case insensitive -> regex
-              name: { like: this.searchInstitutions + '.*', options: 'i' }
-            }
-          }
+          name: this.searchInstitutions
         }
-      }).then(response => {
-        console.log('provinsi ', response.data);
+      }).then(result => {
+        const response = result.data;
+        console.log('universitas ', response.data);
         this.institutionItems = response.data
+        console.log(this.institutionItems);
         if (this.institutionItems.length < 1 && this.searchInstitutions) {
           this.institutionItems.push({ id: 'otherInstitution', name: this.searchInstitutions })
         }
@@ -314,19 +327,17 @@ export default {
     },
     fetchDataProvinces () {
       this.loadingProvince = true
-      this.model.regency =  ''
-      this.regencyItems = []
-
-      this.$axios.get('http://128.199.72.101:3000/api/dataprovinces', {
+      this.$axios.get(this.baseURL+'/provinces', {
         params: {
-          filter: {
-            where: { name: { like: this.searchProvince + '.*', options: 'i' } }
-          }
+          name: this.searchProvince
         }
-      }).then(response => {
+      }).then(result => {
+        // console.log(result);
+        const response = result.data;
         console.log('provinsi ', response.data);
-        this.provinceItems = _orderBy(response.data, ['name'], ['asc'])
-        if (this.provinceItems < 1) {
+        this.provinceItems = response.data
+        console.log(this.provinceItems);
+        if (this.provinceItems.length < 1 &&  this.searchProvince) {
           this.provinceItems.push({ id: 'otherProvince', name: this.searchProvince.toUpperCase() })
         }
         this.loadingProvince = false
@@ -337,22 +348,19 @@ export default {
     },
     fetchDataRegencies () {
       this.loadingRegency = true
-      this.$axios.get('http://128.199.72.101:3000/api/dataregencies', {
+      console.log(this.model.province);
+      this.$axios.get(this.baseURL+'/regencies', {
         params: {
-          filter: {
-            limit: 20,
-            where: {
-              and: [
-                { provinceId: this.model.province.selfId || '100' },
-                { name: { like: this.searchRegency + '.*', options: 'i' } }
-              ]
-            }
-          }
+          limit: 20,
+          province_id: this.model.province || '100',
+          name: this.searchProvince
         }
-      }).then(response => {
+      }).then(result => {
+        const response = result.data
         console.log('regency ', response.data);
         this.regencyItems = response.data
         if (this.regencyItems.length < 1 && this.searchRegency) {
+          console.log('trigger if')
           this.regencyItems.push({ id: 'otherRegency', name: this.searchRegency.toUpperCase() })
         }
         this.loadingRegency = false
@@ -368,8 +376,12 @@ export default {
       this.model.placeOfBirth = this.searchPlaceOfBirth
     },
     applyOtherRegency () {
-      // this.model.regency = this.searchRegency
+      this.model.regency = this.regencyItems
     },
+    applyOtherProvince () {
+      console.log('trigger 2')
+      this.model.province = this.provinceItems
+    },    
     checkValidEmail () {
       this.loadingCheckEmail = true
       return this.$axios.$get('http://128.199.72.101:3000/api/Registrars/check-email', {
@@ -403,10 +415,10 @@ export default {
   },
   mounted () {
     this.fetchDataProvinces()
-    this.$validator.extend('unique', {
-      validate: this.checkValidEmail,
-      getMessage: (field, params, data) => data.message
-    });
+    // this.$validator.extend('unique', {
+    //   validate: this.checkValidEmail,
+    //   getMessage: (field, params, data) => data.message
+    // });
   }
 }
 </script>

@@ -1,8 +1,6 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      
-
       <div class="display-1">Pendaftaran Delegates FLS 2019</div>
       <br class="my-2">
       <v-card>
@@ -13,6 +11,19 @@
         </v-chip>
         <v-card-text>
           <p>
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Bersedia membayar commitment fee, jika terpilih menjadi delegates
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2019
+          </p>
+          <p>
+            <v-icon small>fiber_manual_record</v-icon> Mengikuti peraturan kebijakan dan alur pendaftaran
+          </p>
             <v-icon small>fiber_manual_record</v-icon> Pemuda/pemudi berusia 18-25 tahun
           </p>
           <p>
@@ -39,7 +50,7 @@
         <v-card-text>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Follow fanspage dan instagram Future Leader Summit 2018 : Future Leader Summit
+            Follow fanspage dan instagram Future Leader Summit 2019 : Future Leader Summit
             <br>
             <a class="ml-4 info--text" href="https://www.facebook.com/FutureLeaderSummit/" style="text-decoration: none;">
               <v-icon color="info">fa fa-facebook-square</v-icon>

@@ -18,7 +18,7 @@
                     <v-radio
                       :label="room.name"
                       :color="room.color"
-                      :value="room.name"
+                      :value="room.id"
                       :key="index"
                     ></v-radio>
               </v-radio-group>

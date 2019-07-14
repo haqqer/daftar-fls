@@ -9,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Pendaftaran FLS 2018',
+    title: 'Pendaftaran FLS 2019',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -56,6 +56,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    // baseURL: process.env.NODE_ENV === 'development' ? 'http://localhost:9000/api' : 'http://128.199.72.101:3000/api'
   },
 
   /*
