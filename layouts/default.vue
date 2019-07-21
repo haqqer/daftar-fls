@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-image: url('/images/background.svg')">
+  <v-app style="background-image: url('/images/background.svg');background-repeat: no-repeat; background-size: cover">
     <v-navigation-drawer
       temporary
       v-model="drawer"
@@ -27,7 +27,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="primary" class="d-flex" dense dark flat app>
+    <v-toolbar class="d-flex" color="primary" dark dense flat app>
       <nuxt-link to="/">
         <v-toolbar-title>
           <v-avatar tile>
@@ -56,12 +56,12 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-content style="background-color:#FFB74D">
+    <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer>
+    <v-footer color="primary" dark flat>
       <span>
         &copy; {{ new Date().getUTCFullYear() }} — <a href="https://github.com/creativefls/"><strong>CreativeFLS</strong></a>
       </span>

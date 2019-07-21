@@ -6,7 +6,7 @@
           <v-flex v-for="room in rooms" :key="room.name" md4 xs12>
             <v-card style="box-shadow: none;" class="cursor-pointer" color="transparent" @click.native.stop="openRoomInfo(room.name)">
               <v-card-title style="justify-content: center;">
-                <img :src="room.image" alt="">
+                <img :src="room.image" alt="" width="50%">
               </v-card-title>
               <v-card-text>
                 <v-radio-group v-model="model.room1"
@@ -56,36 +56,42 @@ export default {
       },
       rooms: [
         {
+          id: 0,
           image: '/images/rooms/Digital.png',
           name: 'Digital',
           color: 'secondary',
           longDesc: `Internet of Things (loT), Artificial Intelegence (Al), guantum computing, augmented reality, big data analytics merupakan beberapa teknologi yang hangat pada era ini. Pertanyaan yang muncul, bagaimana cara kita agar teknologi itu dapat diakses oleh semua orang?`
         },
         {
+          id: 1,
           image: '/images/rooms/Education.png',
           name: 'Education',
           color: 'warning',
           longDesc: `Dunia perubahan tengah mengalami perubahan. Menurut Peter Fisk dalam tulisannya mengenai “Education 4.0', terdapat sembilan pergeseran nilai pendidikan yang meliputi: tak berbatas ruang dan waktu, pembelajaran bersifat perseorangan, berbasis data dan pengalaman lapangan, beragam pilihan materi pembelajaran, interpretasi data, perubahan sistem ujian, kemudahan siswa dalam mengatur kurikulumnya, serta pentingnya pendampingan terhadap siswa. Inilah saat pemuda untuk berupaya merespon sembilan tren pergeseran nilai pada sistem pendidikan.`
         },
         {
+          id: 2,
           image: '/images/rooms/Environment.png',
           name: 'Environment',
           color: 'error',
           longDesc: `Plastik, polusi, illegal logging adalah beberapa masalah yang timbul dari eksploitasi manusia terhadap lingkungan. Ketidakseimbangan terjadi antara manusia dan alam. Tujuan dari platform ini adalah membangun lingkungan hidup yang berkembang secara koheren dengan peradapan manusia.`
         },
         {
+          id: 3,
           image: '/images/rooms/International Relation.png',
           name: 'International Relation',
           color: 'info',
           longDesc: `Dalam visi ASEAN 2025 terdapat beberapa aspek yang menjadi sorotan utama yakni, aspek keamanan politik, ekonomi dan sosial budaya. Pada platform International Relations ini, delegates akan membahas bagaimana pergerakan negara-negara ASEAN pada saat ini dan hingga tahun 2025 dalam era revolusi industri 4.0 serta mencari solusi rendahnya daya saing Indonesia dibandingkan negara ASEAN.`
         },
         {
+          id: 4,
           image: '/images/rooms/Technopreneur.png',
           name: 'Technopreneur',
           color: 'primary',
           longDesc: `Jumlah pengguna internet telah berkembang pesat selama dekade terakhir. Sekarang 407. dari populasi dunia melakukan kegiatan online dan lebih dikenal dengan sebutan netizen. Indonesia dalam kancah persaingan global menurut World Competitiveness Report menempati urutan ke-45 atau terendah dari seluruh negara yang diteliti, di bawah Singapura (8), Malaysia (34), Cina (35), Filipina (38), dan Thailand (40). Salah satu penyebabnya adalah tingginya sifat konsumtif masyarakat. Platform ini bertujuan merubah perilaku masyarakat yang konsumtif ke produktif di sektor teknologi dan ekonomi dalam upaya meninngkatkan daya saing global.`
         },
         {
+          id: 5,
           image: '/images/rooms/UrbanPlanning.png',
           name: 'Urban Planning',
           color: 'success',

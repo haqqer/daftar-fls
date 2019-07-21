@@ -3,7 +3,7 @@ import Vuetify from 'vuetify'
 
 Vue.use(Vuetify, {
   theme: {
-    primary: '#FB8C00', // a color that is not in the material colors palette
+    primary: '#9C27B0', // a color that is not in the material colors palette
     secondary: '#1abc9c',
     accent: '#2c3e50',
     error: '#e74c3c',

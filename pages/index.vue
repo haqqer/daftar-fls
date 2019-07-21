@@ -1,5 +1,5 @@
 <template>
-  <v-layout column justify-center align-center>
+  <v-layout column justify-center align-center color="primary">
     <v-flex xs12 sm8 md6>
       <div class="display-1">Pendaftaran Delegates FLS 2019</div>
       <br class="my-2">
