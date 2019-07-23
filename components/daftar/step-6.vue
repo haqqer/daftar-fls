@@ -26,7 +26,7 @@
       class="pa-0"
     ></v-text-field>
 
-    <div class="title primary__dark--text mt-4">Studi Kasus Room {{ roomSelected }}</div>
+    <div class="title primary__dark--text mt-4">Studi Kasus Room</div>
 
     <div v-html="caseStudyQuestion" class="subheading primary__dark--text mt-4"></div>
     <v-text-field
