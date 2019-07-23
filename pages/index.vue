@@ -69,18 +69,18 @@
           <p class="mb-0">
             <v-icon small>fiber_manual_record</v-icon>
             Download poster yang telah disediakan 
-            <a href="https://drive.google.com/file/d/1jrZ-usR65JmJ46l7AK4jVyLV_WmCxjfo/view?usp=sharing" 
+            <a href="https://drive.google.com/file/d/1mNXCaQu-bqj_7yanwYbGeb0j5goQOBK5/view?usp=sharing" 
               target="blank_"
               download>di sini</a>, 
               kemudian upload di instagram kamu dengan caption berikut, lalu tag akun Future Leader Summit @FLSummit dan 5 teman kamu!
           </p>
           <blockquote class="blockquote mt-0">
             &#8220;
-            <br> FLS 2019 Future Leader’s Idea Manifestation of ASEAN 2025 in The Age of Disruption.
+            <br> I have dared myself to take the opportunity to become a world change agent by registering  Future Leader Summit 2019. How about you? Challenge yourself now!.
             <footer>
               <small>
-                #FutureLeaderSummit2019
-                <br> #ThinkTheUnthikable
+                #ThinkTheUnthikable
+                <br> #FutureLeaderSummit
                 <br> #FLS2019
               </small>
             </footer>
