@@ -63,7 +63,7 @@
     </v-content>
     <v-footer color="primary" dark flat>
       <span>
-        &copy; {{ new Date().getUTCFullYear() }} — <a href="https://github.com/creativefls/"><strong>CreativeFLS</strong></a>
+        &copy; {{ new Date().getUTCFullYear() }} — <a href="https://github.com/creativefls/" class="white--text"><strong>CreativeFLS</strong></a>
       </span>
     </v-footer>
   </v-app>

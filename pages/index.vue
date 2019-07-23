@@ -1,7 +1,7 @@
 <template>
-  <v-layout column justify-center align-center color="primary">
-    <v-flex xs12 sm8 md6>
-      <div class="display-1">Pendaftaran Delegates FLS 2019</div>
+  <v-layout column justify-center align-center class="mt-3">
+    <h2 class="display-1">Pendaftaran Delegates FLS 2019</h2>
+    <v-flex xs12 sm8 md6 >
       <br class="my-2">
       <v-card>
         <v-chip style="margin-top: -16px;" class="ml-4" label color="primary" text-color="white">
@@ -79,7 +79,7 @@
           </p>
           <blockquote class="blockquote mt-0">
             &#8220;
-            <br> I have dared myself to take the opportunity to become a world change agent by registering myself as delegate of Future Leader Summit 2019. How about you? challenge yourself now!
+            <br> FLS 2019 Future Leader’s Idea Manifestation of ASEAN 2025 in The Age of Disruption.
             <footer>
               <small>
                 #FutureLeaderSummit2019
@@ -95,7 +95,7 @@
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon>
-            Setelah pengumuman penerimaan delegates via email dan website Future Leader Summit 2019, delegates terpilih wajib melakukan konfrimasi dan pembayaran maksimal 3x24 jam via email PID masing-masing room.
+            Setelah pengumuman penerimaan delegates via email dan website Future Leader Summit 2019, delegates terpilih wajib melakukan konfrimasi dan pembayaran maksimal 7x24 jam via email Person In Delegates masing-masing room.
           </p>
           <p>
             <v-icon small>fiber_manual_record</v-icon>

@@ -61,59 +61,56 @@ export default {
     },
     caseStudyQuestion () {
       switch (this.roomSelected) {
-        case 'Education':
+        case 0:
           return `
-            <p>Perkembangan zaman yang pesat memberi keuntungan untuk mengakses informasi yang dibutuhkan dengan cepat dan mudah. Tanpa perlu bertatap muka dengan guru atau mendapat bimbingan khusus, seseorang dapat belajar lewat video interaktif yang dibuat oleh suatu lembaga bimbingan online. Di Indonesia sudah banyak tersedia platform online yang mengandung pembelajaran virtual seperti Ruangguru, Quipper, Zenius, HarukaEdu, dan lain lain sebagainya yang menyediakan berbagai  macam jenis pendidikan dengan harga terjangkau. Tidak hanya itu ada juga inspigo yang juga memberikan pendidikan dengan softskill berbasis audio dengan cuma – cuma.</p>
+            <h3>Digital</h3>
+            <p>Tren Internet of Things (IoT) merambah hampir di semua lini kehidupan. Contoh nyatanya pun semakin terlihat dengan banyaknya perangkat-perangkat terkoneksi yang tersebar dan digunakan oleh banyak orang di dunia, tak terkecuali di Indonesia. Hal ini terjadi seiring dengan peningkatan konektivitas jaringan internet. Data dari IDC menyebutkan bahwa perangkat IoT di Asia Pasifik (termasuk Indonesia) diproyeksikan akan bertambah dari 3,1 miliar perangkat menjadi 8,6 miliar perangkat pada tahun 2015-2020. Begitu pula dengan pertumbuhan pasar dari USD 250 miliar menjadi USD 583 miliar pada kurun waktu yang sama.</p>
 
-            <p>Dalam cakupan regional yang lebih luas juga tersedia coursera.com yang menyediakan materi perkulihaan secara gratis. Limitless Campus Indonesia juga merupakan salah satu penyedia pendidikan softskill offline dengan metode pembayaran “pay as you wish”. Namun, dengan berbagai kemudahan akses terhadap pendidikan dan berbagai layanan yang gratis, angka putus sekolah di Indonesia masih saja terbilang tinggi.</p>
+            <p>Pangsa pasar IoT di Indonesia diperkirakan berkembang pesat dan nilainya bakal mencapai Rp444 triliun pada tahun 2022. Nilai tersebut disumbang dari konten dan aplikasi sebesar Rp192,1 triliun, disusul platform Rp156,8 triliun, perangkat IoT Rp56 triliun, serta network dan gateway Rp39,1 triliun. (sc: kemenperin.go.id)</p>
 
-            <p>Mengutip data dari UNICEF tahun 2016, sebanyak 2,5 juta anak Indonesia tidak dapat menikmati pendidikan lanjutan yakni sebanyak 600 ribu anak usia Sekolah Dasar (SD) dan 1,9 juta anak usia Sekolah Menengah Pertama (SMP). Dari data sebelumnya ebanyak 47,3 persen responden menjawab tidak bersekolah lagi karena masalah biaya, kemudian 31 persen karena ingin membantu orang tua dengan bekerja, serta 9,4 persen karena ingin melanjutkan pendidikan nonformal seperti pesantren atau mengambil kursus keterampilan lainnya. Olah karena itu, bangsa Indonesia membutuhkan peran serta dari generasi muda untuk ikut serta menciptakan perubahan disruptif di dunia pendidikan agar pendidikan dapat dinikmati oleh seluruh lapisan masyarakat di Indonesia.</p>
+            <p>Internet of Things bukan saja melulu mengenai "Things" atau perangkatnya, melainkan aplikasi dan layanan yang menjadi pendukung dari IoT. Semakin banyak perangkat terkoneksi, maka akan semakin banyak pula aplikasi dan layanan yang berjalan. Seperti misalnya, penghitungan meteran listrik otomatis, jam tangan pintar yang dapat mengukur detak jantung dan langsung menampilkan hasilnya di layar ponsel, dan sebagainya. Di baliknya, terdapat berbagai aplikasi yang bekerja secara simultan atau pun bersamaan untuk menghasilkan data-data tersebut.</p>
 
-            <p>Nah! menurut kamu, mengapa angka anak yang putus sekolah masih saja tinggi? lalu sebagai seorang pemuda, jelaskan langkah apa yang harus dan bisa kamu lakukan untuk memperbaiki masalah tersebut?</p>
+            <p>Namun, di baliknya, tersembunyi potensi ancaman terhadap keamanan data, keamanan fisik, keamanan dari perangkat, regulasi, privasi, enkripsi, otentikasi, dan segudang ancaman lain yang perlu ditangani agar kendala tersebut tidak mengganggu di kemudian harinya.</p>
+
+            <p>Bagaimana sikap dan strategi pendekatan seperti apa yang bisa anda tawarkan sebagai solusi dari ancaman terhadap keamanan data/privasi pengguna?</p>
+
           `
-        case 'Digital':
+        case 1:
           return `
-            <p>Di Indonesia, diskusi tentang blockchain sedang menghangat menyusul kehebohan soal mata uang digital salah satunya adalah bitcoin. Bank Indonesia (BI) telah melarang transaksi pembayaran menggunakan bitcoin pada tahun 2019. Larangan bitcoin ini akan diatur dalam Peraturan Bank Indonesia (PBI) yang rencananya akan dikeluarkan dalam waktu dekat. Namun saat ini memang belum ada peraturan spesifik oleh Bank Indonesia terkait dengan transaksi menggunakan bitcoin</p>
-
-            <p>Untuk itu, Bank Indonesia masih melakukan pengkajian secara mendalam terkait bitcoin, apakah akan diatur dalam Peraturan Bank Indonesia (PBI) uang elektronik atau terpisah misalnya nanti masuk dalam PBI cryptocurrency.</p>
-
-            <p>Yang jelas, BI mengimbau agar merchant tidak menerima bitcoin sebagai alat pembayaran resmi di Indonesia. Jika masyarakat mengalami kerugian terkait bitcoin, regulator BI tidak akan bertanggung jawab terkait hal ini.</p>
-
-            <p>Bagaimana pandangan kamu sebagai warga negara Indonesia mengenai kehidupan dengan atau tanpa bitcoin di Indonesia? Apabila Bank Indonesia membuka ruang pendapat mengenai polemik bitcoin yang ada, bagaimana sikap kamu terhadap masalah bitcoin tersebut?</p>
+            <h3>Education</h3>
+            <p>Bagaimana penerapan kurikulum yang tepat guna untuk menunjang pendidikan tinggi Indonesia dalam tuntutan era edukasi 4.0 dan apakah langkah yang diterapkan oleh pemerintah, perguruan tinggi dan institusi pendukung lainnya sudah sesuai dan siap untuk dijalankan di Indonesia dengan segala peraturan yang ada serta mempersiapkan indonesia bertanding dalam kompetensi ASEAN 2025?</p>
           `
-        case 'Poverty':
+        case 2:
           return `
-            <p>Data BPS pada tahun 2014 menunjukkan, dari 31 juta warga miskin di Indonesia, sebagian besar di antaranya adalah warga pedesaan yang berstatus sebagai petani. Berbagai upaya sudah dilakukan pemerintah dan banyak pihak untuk meningkatkan kesejahteraan petani, namun faktanya mereka tetap saja terjebak pada kemiskinan dan bahkan cenderung semakin miskin. Berbagai upaya yang telah dilakukan untuk mengangkat derajat kelayakan hidup petani seolah sia-sia dan petani sepertinya menjadi semakin tidak berdaya.</p>
+            <h3>Environment</h3>
+            <p>Masalah lingkungan yang kita hadapi dewasa ini seperti: deforestasi, pemanasan global dan pencemaran laut merupakan masalah multidimensi.</p>
 
-            <p>Salah satu jawaban mengapa petani tetap saja miskin dikemukakan oleh Dirjen Prasarana dan Sarana Pertanian Kementerian Pertanian, Gatot Irianto. Menurutnya, banyak petani tetap miskin karena jumlah petani dan tenaga kerja di sektor pertanian, khususnya pertanian tanaman pangan memang cenderung berlebihan. Dengan luas baku lahan pertanian 8,1 juta hektar idealnya hanya dibutuhkan satu juta rumah tangga petani, dengan sekitar 400.000 hingga 500.000 tenaga kerja formal di tingkat budidaya. Padahal ada sekitar 30 juta petani yang menggeluti lahan itu.</p>
+            <p>Data dari Badan Nasional Penanggulangan Bencana, tahun 2018 sebanyak 2.426 kejadian bencana di Indonesia, 96,6% disebabkan oleh bencana Hidrometeorologi.</p>
 
-            <p>Berdasarkan data dari Badan Pusat Statistik, tingkat kemiskinan di perdesaan meningkat sebesar 0,02% dari 14.09% menjadi 14.11% pada tahun 2016. Namun, pemerintah mulai menargetkan untuk tidak ada lagi orang miskin di Indonesia pada tahun 2045, sedangkan jumlah petani yang tinggal di desa pun tetap terjadi kenaikan tingkat kemiskinan tiap taunnya</p>
+            <p>Manusia dan seluruh aktifitasnya dari ruang lingkup produksi, distribusi, dan konsumsi memiliki andil besar dalam masalah lingkungan. </p>
 
-            <p>Melihat hal tersebut, Bagaimana pendapat kamu mengenai target Indonesia bebas kemiskinan tahun 2045 ? Dan hal apa yang dapat kamu lakukan untuk ikut andil dalam mewujudkan target Indonesia bebas kemiskinan tersebut?</p>
+            <p>Berdasarkan ruang lingkup tersebut, dapatkah anda menjelaskan masalah lingkungan hidup disekitar anda, serta bagaimana langkah solutif dalam upaya mewujudkan lingkungan hidup yang berkembang secara koheren dengan peradaban manusia?</p>
           `
-        case 'Human Capital':
+        case 3:
           return `
-            <p>Di zaman serba teknologi saat ini, peran manusia mulai digantikan oleh teknologi baik itu secara teknis operasional dengan mesin-mesin canggih ataupun secara intelektual dengan artificial intelligence. Tentu hal ini menimbulkan kegelishan tersendiri bagi mereka yang mulai tergantikan perannya atau bahkan lapangan pekerjaanya oleh teknologi.</p>
+            <h3>International Relation</h3>
+            <p>Dalam visi ASEAN 2025 terdapat beberapa aspek yang menjadi sorotan utama yakni, aspek Political-Security, aspek Economic dan aspek sosio-cultural. Saat ini negara-negara ASEAN banyak menjalin kerjasama ekonomi dengan negara-negara Asia lainnya, salah satu negara yang aktif menjalin kerjasama dengan negara-negara ASEAN adalah Tiongkok. Berbagai jenis kerjasama yang dilakukan tentunya berimplikasi terhadap perekembangan pergerakan prekonomian kedua belah pihak yang bekerjasama. ASEAN di satu sisi beranggotakan negara-negara yang perekonomiannya belum mampu untuk membangun sendiri infrastrukturnya tanpa ada kerjasama, hal ini tentunya menyebabkan negara-negara ASEAN perlu bersanding dan bekerjasama dengan pihak yang mampu membantu dan menopang perekonomiannya. Kebangkitan Tiongkok, baik secara politik ataupun ekonomi merupakan peluang bagi negara-negara ASEAN untuk memajukan ekonomi dan kepentingan politiknya. Beberapa pihak memandang Tiongkok akan mengancam perekonomian ASEAN, namun sebaliknya justru keberadaan Tiongkok saat ini akan membantu ASEAN dalam mewujudkan mimpi-mimpinya menuju kebangkitan ASEAN. </p>
 
-            <p>Beberapa pekerjaan mungkin akan tergantikan secara penuh oleh teknologi. Namun tentunya akan muncul berbagai macam pekerjaan baru yang belum terpikirkan sebelumnya di masa depan. Mungkin nanti akan bermunculuan designer 3D Printing, Insinyur drones, Sejarawan Internet, Jasa penghijau lingkungan bahkan mungkin akan ada terapis pecandu media sosial.</p>
+            <p>Saat ini pertumbuhan ekonomi politik negara-negara ASEAN dapat dikatakan dalam tahap stabil, ketika harga dollar melonjak tajam, perekonomian negara-negara ASEAN cenderung tidak goyah dengan hal tersebut, hal ini dapat dijadikan pertimbangan bahwa perekonomian negara-negara ASEAN sudah dalam tahap perkembangan yang pesat, dilansir dari Detik Finance (Detik Finance, 2018), kejatuhan ekonomi negara-negara ASEAN terhadap kenaikan dollar tidak diatas 1 %, hal ini membuktikan bahwa kemampuan ekonomi negara-negara ASEAN sudah melebihi standar sebelumnya, hal ini tentunya berkaitan dengan kerjasama-kerjasama ekonomi yang dijalin negara-negara ASEAN dengan negara-negara lainnya.</p>
 
-            <p>Bagaimana sikap kamu dalam menghadapi situasi seperti ini? Cara dan persiapan seperti apa yang akan kamu lakukan agar tetap bersaing dalam menghadapi maraknya teknologi?</p>
+            <p>Melalui situasi yang terjadi di atas, posisikan diri kamu sebagai seorang aktivis hubungan internasional, apa yang akan kamu lakukan dalam menanggapi persoalan yang terjadi di ASEAN saat ini dan berikan pemikiran baru mengenai apa yang akan menjadii tantangan utama negara-negara ASEAN pada saat ini?</p>
           `
-        case 'Entrepreneurship':
+        case 4:
           return `
-            <p>Ekonomi kreatif menjadi harapan Indonesia di tengah gejolak perekonomian global. Saat ini, sektor ekonomi kreatif mampu memberikan sumbangan yang positif bagi perekonomian Indonesia dalam kontribusinya terhadap PDB (Produk Domestik Bruto) Indonesia yang selalu mengalami peningkatan. PDB Ekonomi Kreatif tumbuh sebesar 4,38 persen pada tahun 2015 dengan total nilai 852,24 Triliun Rupiah. Pada tahun 2014-2015 ekspor Ekonomi Kreatif mengalami penguatan sebesar 6,60% dengan total nilai ekspor sebesar USD 19,4 miliar. Munculnya Start Up di dunia usaha ekonomi kreatif juga menunjukkan bahwa daya saing produk dan daya saing usaha/perusahaan Indonesia juga memiliki prospek yang cukup cerah.</p>
-
-            <p>Dalam upaya meningkatkan potensi ekonomi kreatif di Indonesia, dikeluarkan Peraturan Presiden Nomor 72 Tahun 2015 tentang Badan Ekonomi Kreatif. salah satu tugas Badan Ekonomi Kreatif adalah mengelola 16 subsektor ekonomi kreatif yang meliputi arsitektur, desain interior, desain komunikasi visual, desain produk, film, animasi, dan video, fotografi, kriya, kuliner, musik, fashion, aplikasi dan game developer, penerbitan, periklanan, televisi dan radio, seni pertunjukan, dan seni rupa.  Namun dari hasil Listing Sensus Ekonomi 2012 menunujukan dari 16 subsektor yang ada, hanya 3 subsektor yang perkembangannya paling signifikan yaitu kuliner, fashion dan kriya.</p>
-
-            <p>Menurut pendapat kamu apakah yang menyebabkan kesenjangan tingkat perkembangan subsektor-subsektor ekonomi kreatif di Indonesia? Dan kontribusi apakah yang bisa kamu berikan untuk meningkatkan perkembangan ekonomi kreatif di Indonesia?</p>
+            <h3>Technopreneur</h3>
+            <p>Revolusi industri 4.0 telah mendorong kemajuan di berbagai bidang, salah satunya terkait ekonomi digital di ASEAN, dengan berkembangnya pengetahuan seputar Artificial Intellegence (AI), Virtual Reality, dan Big Data Analysis (sc :warta ekonomi, oktober 2018). Dengan adanya kemajuan teknologi di era 4.0, investasi global untuk startup teknologi di ASEAN meningkat hingga bernilai US10,1 miliar dan membuat ekonomi dalam negeri berkembang pesat. (sc: East vc). Investasi tersebut sangat penting bagi permodalan startup agar dapat bertahan ditengah persaingan bisnis yang semakin ketat. Di tengah berbagai fenomena tersebut, modal ventura semakin gencar memberikan suntikan dana untuk startup potensial. Di tengah kemajuan ekonomi digital di era 4.0, modal ventura menjadi semakin menjamur dan menjadi lading bisnis yang cukup menggiurkan. Dengan adanya fenomena tersebut, bagaimanakah pengaruh merajalelanya modal ventura terhadap keberlangsungan ekonomi suatu Negara?</p>
           `
-        case 'Urban Planning':
+        case 5:
           return `
-            <p>Manusia dan hunian tidak bisa dipisahkan, terutama generasi millennial yang saat ini mendominasi penduduk Indonesia. Menurut Badan Pusat Statistik, dari jumlah penduduk usia produktif, kelompok usia yang mendominasi adalah usia 15-39 tahun dengan jumlah sekitar 84,75 juta (32% dari total penduduk Indonesia dengan jumlah 258 juta pada tahun 2017). Artinya, kemungkinan besar beberapa tahun kedepan generasi millennial akan mendominasi jumlah penduduk di Indonesia.</p>
+            <h3>Urban Planning</h3>
+            <p>Penduduk perkotaan akan merepresentasikan 45 persen dari populasi ASEAN yang mana jutaan orang, khususnya mereka yang tinggal di tempat yang rentan sepanjang tepi sungai, kanal, dan sisi lembah, akan terkena dampak berbahaya dari kerusakan lingkungan. Porsi rentan dari populasi ASEAN ini diperkirakan akan meningkat 50 persen di wilayah ibukota. Ketika bencana datang, yang akan terkena imbas terbesar adalah penduduk kurang mampu, karena mereka lebih rentan terhadap bahaya lingkungan dan membutuhkan waktu lebih lama untuk bangkit kembali dari krisis. Kota adalah wadah penyimpangan ketidaksetaraan dan resiko iklim hanya akan memperburuk ketidaksetaraan ini.</p>
 
-            <p>Namun yang menjadi permasalahan saat ini adalah terjadinya penyusutan lahan produktif yang digunakan untuk hunian. Selain hunian, lahan produktif juga digunakan untuk proyek nasional dan sejumlah industri baru. Menurut data Rumah123, kenaikan harga rumah jauh lebih besar dibanding kenaikan pendapatan pertahunnya. Disamping itu, menurut pendiri Trinity Property Group Bong Chandra menyebutkan beberapa kesulitan generasi millennial belum bisa memiliki property di usia muda karena salah satu diantaranya adalah financial planning yang buruk.</p>
-
-            <p>Apabila kamu dipercaya untuk menjadi salah satu orang yang bisa meningkatkan dan mengembangkan kualitas perencanaan hunian yang layak bagi generasi millennial kedepannya, apa saja konsep dan inovasi yang akan kamu lakukan?</p>
+            <p>Melihat kelamnya kondisi perkotaan sebagaimana tersebut diatas, bagaimana sikap & strategi pendekatan seperti apa yang bisa anda tawarkan pada peradaban untuk pembangunan perkotaan hingga dapat menjadi aspek pendukung 4 pilar Masyarakat Ekonomi ASEAN?</p>
           `
       }
     }
