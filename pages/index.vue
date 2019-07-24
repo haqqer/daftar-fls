@@ -23,16 +23,7 @@
           </p>
             <v-icon small>fiber_manual_record</v-icon> Pemuda/pemudi berusia 18-25 tahun
           <p>
-            <v-icon small>fiber_manual_record</v-icon> Mempunyai ketertarikan dalam isu sosial sesuai room Future Leader Summit 2019
-          </p>
-          <p>
             <v-icon small>fiber_manual_record</v-icon> Bersedia membayar commitment fee, jika terpilih menjadi delegates
-          </p>
-          <p>
-            <v-icon small>fiber_manual_record</v-icon> Siap berkontribusi dan berjejaring di Future Leader Summit 2019
-          </p>
-          <p>
-            <v-icon small>fiber_manual_record</v-icon> Mengikuti peraturan kebijakan dan alur pendaftaran
           </p>
         </v-card-text>
       </v-card>
@@ -69,7 +60,7 @@
           <p class="mb-0">
             <v-icon small>fiber_manual_record</v-icon>
             Download poster yang telah disediakan 
-            <a href="https://api.futureleadersummit.org/images/poster.jpg" 
+            <a href="https://drive.google.com/file/d/1mNXCaQu-bqj_7yanwYbGeb0j5goQOBK5/view?usp=sharing" 
               target="blank_"
               download>di sini</a>, 
               kemudian upload di instagram kamu dengan caption berikut, lalu tag akun Future Leader Summit @FLSummit dan 5 teman kamu!
