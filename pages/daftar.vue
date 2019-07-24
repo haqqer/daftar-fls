@@ -175,7 +175,7 @@ export default {
         this.setHistory(data)
         swal(
           'Submit Error',
-          error.message,
+          error.response.data.message.errors[0].message,
           'error'
         )
         this.loadingSubmit = false
