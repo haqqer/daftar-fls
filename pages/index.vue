@@ -76,12 +76,12 @@
           </p>
           <blockquote class="blockquote mt-0">
             &#8220;
-            <br> FLS 2019 Future Leader’s Idea Manifestation of ASEAN 2025 in The Age of Disruption.
+            <br> I have dared myself to take the opportunity to become a world change agent by registering Future Leader Summit 2019. How about you? Challenge yourself now!
             <footer>
               <small>
-                #FutureLeaderSummit2019
-                <br> #ThinkTheUnthikable
-                <br> #FLS2019
+                #ThinkTheUnthinkable
+                <br>#FutureLeaderSummit
+                <br>#FLS2019
               </small>
             </footer>
             &#8221;
