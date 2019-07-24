@@ -69,7 +69,7 @@
           <p class="mb-0">
             <v-icon small>fiber_manual_record</v-icon>
             Download poster yang telah disediakan 
-            <a href="https://api.futureleadersummit.org/images/poster.png" 
+            <a href="https://api.futureleadersummit.org/images/poster.jpg" 
               target="blank_"
               download>di sini</a>, 
               kemudian upload di instagram kamu dengan caption berikut, lalu tag akun Future Leader Summit @FLSummit dan 5 teman kamu!
