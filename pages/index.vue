@@ -1,6 +1,6 @@
 <template>
   <v-layout column justify-center align-center class="mt-3">
-    <h2 class="display-1">Pendaftaran Delegates FLS 2019</h2>
+    <h2 class="display-1 white--text">Pendaftaran Delegates FLS 2019</h2>
     <v-flex xs12 sm8 md6 >
       <br class="my-2">
       <v-card>
@@ -130,6 +130,7 @@ export default {
           .container{
             height: 40%;
             width: 40px;
-            background-image: url('/images/background.svg')
+            background:linear-gradient(
+              #F44336, #E91E63), url('/images/background.svg') center center no repeat;
           }
 </style>

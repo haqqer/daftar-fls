@@ -1,5 +1,6 @@
 <template>
-  <v-app style="background-image: url('/images/background.svg');background-repeat: no-repeat; background-size: cover">
+  <v-app >
+    <v-container class="main-bg" fluid="">
     <v-navigation-drawer
       temporary
       v-model="drawer"
@@ -61,11 +62,12 @@
         <nuxt />
       </v-container>
     </v-content>
+    </v-container>
     <v-footer color="primary" dark flat>
       <span>
         &copy; {{ new Date().getUTCFullYear() }} — <a href="https://github.com/creativefls/" class="white--text"><strong>CreativeFLS</strong></a>
       </span>
-    </v-footer>
+    </v-footer>    
   </v-app>
 </template>
 
@@ -96,6 +98,9 @@
 </script>
 
 <style lang="stylus">
+.main-bg
+  background linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/images/background.svg') no-repeat;
+  background-size cover
 nav
   justify-content center
   padding 6px 0
