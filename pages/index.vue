@@ -99,6 +99,7 @@
         <v-card-actions>
           <v-layout justify-center>
             <v-btn color="primary" large round nuxt to="/daftar">Daftar Sekarang</v-btn>
+            <v-btn color="primary" large round nuxt to="/resend">Cek Pendaftaran</v-btn>
           </v-layout>
         </v-card-actions>
       </v-card>
