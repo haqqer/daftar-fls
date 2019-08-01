@@ -142,7 +142,15 @@
     >
       <div slot="no-data" @click="applyOtherInstitution()">{{ loadingUniversity ? 'Loading...' : searchInstitutions }}</div>
     </v-select>
+    
+    <v-text-field 
+      v-if="institutionNotFound == true"
+      v-model="model.institution"
+      label="Institution"
+      disabled
+    >
 
+    </v-text-field>
     <div class="title primary__dark--text my-2">Kontak</div>
     <v-text-field
       v-model="model.phone"
@@ -240,6 +248,7 @@ export default {
       regencyItems: [],
       provinceItems: [],
       institutionItems: [],
+      institutionNotFound: false,
       menuDateOfBirth: false,
       genderItems: [
         { id: 0, name: 'male', alias: 'Laki-Laki' },
@@ -317,7 +326,7 @@ export default {
         this.institutionItems = response.data
         console.log(this.institutionItems);
         if (this.institutionItems.length < 1 && this.searchInstitutions) {
-          this.institutionItems.push({ id: 'otherInstitution', name: this.searchInstitutions })
+          this.institutionItems.push({ _id: 'otherInstitution', nama: this.searchInstitutions })
         }
         this.loadingUniversity = false
       }).catch(error => {
