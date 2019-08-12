@@ -61,13 +61,13 @@
           <div class="body-2"><b>Institusi</b></div>
           <p>{{ delegate.institution }}</p>
           <div class="body-2"><b>Room pilihan</b></div>
-          <p>{{ getRoom(delegate.room.firstRoom) }}</p>
+          <p>{{ getRoom(delegate.Room.firstRoom) }}</p>
           <div class="body-2"><b>Motivasi ikut FLS 2019</b></div>
-          <p>{{ delegate.essay.essayMotivationJoin }}</p>
+          <p>{{ delegate.Essay.essayMotivationJoin }}</p>
           <div class="body-2"><b>Alasan memilih room</b></div>
-          <p>{{ delegate.essay.essayRoomSelected }}</p>
+          <p>{{ delegate.Essay.essayRoomSelected }}</p>
           <div class="body-2"><b>Jawaban Studi Kasus</b></div>
-          <p>{{ delegate.essay.essayCaseStudy }}</p>
+          <p>{{ delegate.Essay.essayCaseStudy }}</p>
         </v-card-text>
         <v-card-actions>
           <v-btn round block color="primary" dark @click="resendEmail()">Kirim ulang emailku</v-btn>
@@ -100,12 +100,9 @@ export default {
         institution: '',
         phone: '',
         email: '',
-        room: {
-          firstRoom: '',
-          secondRoom: '',
-        },        
+        Room: '',        
         socmed: '',
-        essay: {
+        Essay: {
           essayMotivationJoin: '',
           essayRoomSelected: '',
           essayCaseStudy: ''
@@ -125,12 +122,12 @@ export default {
         } else {
           this.$axios.post('https://api.futureleadersummit.org/delegates/send', {
             email: this.email,
-            phone: this.phone,
+            phone: this.phone.toLowerCase(),
           }).then((response) => {
             const result = response.data
             // this.clearDelegate()
             // console.log(result)
-            this.delegate = result.data
+            this.delegate = result.data[0]
             this.getProvince(this.delegate.province);
             this.getCity(this.delegate.city);
             console.log('[delegate]',this.delegate)
