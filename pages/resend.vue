@@ -125,9 +125,8 @@ export default {
             phone: this.phone.toLowerCase(),
           }).then((response) => {
             const result = response.data
-            // this.clearDelegate()
-            // console.log(result)
-            this.delegate = result.data[0]
+            this.delegate = result.data
+
             this.getProvince(this.delegate.province);
             this.getCity(this.delegate.city);
             console.log('[delegate]',this.delegate)
