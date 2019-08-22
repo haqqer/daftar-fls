@@ -121,8 +121,8 @@ export default {
           swal.fire('Error', 'Lengkapi dulu ya', 'error')
         } else {
           this.$axios.post('https://api.futureleadersummit.org/delegates/send', {
-            email: this.email,
-            phone: this.phone.toLowerCase(),
+            email: this.email.toLowerCase(),
+            phone: this.phone,
           }).then((response) => {
             const result = response.data
             this.delegate = result.data
