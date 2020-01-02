@@ -18,7 +18,7 @@
               data-vv-name="email"
               data-vv-as="Email"
               label="Email"></v-text-field>
-            <v-text-field
+            <v-text-field 
               v-model="phone"
               :error-messages="errors.collect('phone')"
               v-validate="'required|numeric'"
